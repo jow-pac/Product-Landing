@@ -1,91 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CHAINZZZ Landing Page</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CHAINZZZ — Custom Chains & Grills</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <header id="header" class="site-header">
+    <div class="container header-inner">
+      <div class="logo-wrap">
+        <img id="header-img" src="mainlogo.png" alt="CHAINZZZ Logo" />
+        <span class="brand-name">CHAINZZZ</span>
+      </div>
 
-  <header id="header">
-    <div class="logo-container">
-      <img src="mainlogo.png" alt="CHAINZZZ Logo" id="header-img" />
-      <h1 class="brand-name">CHAINZZZ</h1>
+      <button id="mobile-nav-toggle" aria-controls="nav-bar" aria-expanded="false" class="hamburger" aria-label="Toggle navigation">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav id="nav-bar" class="nav">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#features">Features</a></li>
+          <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
+          <li><a class="nav-link" href="#pricing">Pricing</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav id="nav-bar">
-      <ul class="nav-list">
-        <li><a href="#features" class="nav-link">Features</a></li>
-        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-        <li><a href="#pricing" class="nav-link">Pricing</a></li>
-      </ul>
-    </nav>
   </header>
 
   <main>
     <section class="hero">
-      <h2>SHINE BRIGHT LIKE A DIAMOND</h2>
-      <p>Custom chains and grills!</p>
-      <form id="form" action="https://www.freecodecamp.org/email-submit">
-        <input type="email" id="email" name="email" placeholder="Enter your email" required />
-        <input type="submit" id="submit" value="GET ICED UP" />
-      </form>
-    </section>
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <h1 class="hero-title">SHINE BRIGHT LIKE A DIAMOND</h1>
+          <p class="hero-sub">Custom chains and grills, handcrafted with attitude.</p>
 
-    <section id="features">
-      <h2>Features</h2>
-      <div class="features-container">
-        <article class="feature">
-          <h3>Real Gold & Diamonds</h3>
-          <p>We use authentic 18K gold and VVS diamonds for unmatched shine.</p>
-        </article>
-        <article class="feature">
-          <h3>Custom Designs</h3>
-          <p>Your name, your style — we craft chains and grills that reflect your persona.</p>
-        </article>
-        <article class="feature">
-          <h3>Fast Delivery</h3>
-          <p>Get your drip delivered fast, with free returns if you're not satisfied.</p>
-        </article>
+          <form id="form" action="https://www.freecodecamp.org/email-submit" class="cta-form">
+            <label for="email" class="visually-hidden">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required />
+            <button id="submit" type="submit" class="btn primary">GET ICED UP</button>
+          </form>
+        </div>
+
+        <div class="hero-right">
+          <!-- Decorative card to add visual richness -->
+          <div class="showcase-card">
+            <div class="shine-ring"></div>
+            <img src="mainlogo.png" alt="Product showcase" class="showcase-img" />
+            <p class="showcase-label">Custom • Gold • Iced</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="how-it-works">
-      <h2>How It Works</h2>
-      <div class="video-container">
-        <iframe id="video" src="https://www.youtube.com/embed/2qsVRetGjFY" title="Chain Crafting Process" frameborder="0" allowfullscreen></iframe>
+    <section id="features" class="section">
+      <div class="container">
+        <h2 class="section-title">Features</h2>
+        <div class="features-grid">
+          <article class="feature card">
+            <h3>Real Gold & Diamonds</h3>
+            <p>Authentic 18K gold and VVS diamonds for unmatched shine and durability.</p>
+          </article>
+
+          <article class="feature card">
+            <h3>Custom Designs</h3>
+            <p>Personalized names, styles, and grills—crafted to your vibe.</p>
+          </article>
+
+          <article class="feature card">
+            <h3>Fast, Secure Delivery</h3>
+            <p>Tracked shipping and careful packaging so your piece arrives pristine.</p>
+          </article>
+        </div>
       </div>
     </section>
 
-    <section id="pricing">
-      <h2>Pricing</h2>
-      <div class="pricing-container">
-        <div class="price-box">
-          <h3>Starter Chain</h3>
-          <p>₱250</p>
-          <p>Gold-plated, perfect for beginners</p>
-          <button>Select</button>
+    <section id="how-it-works" class="section section-muted">
+      <div class="container">
+        <h2 class="section-title">How It Works</h2>
+        <div class="how-grid">
+          <div class="how-text">
+            <ol class="steps">
+              <li><strong>Choose a design</strong> — pick or submit your custom idea.</li>
+              <li><strong>Approve mockup</strong> — we send a 3D mock for your okay.</li>
+              <li><strong>We craft & ship</strong> — hand-finished, then delivered.</li>
+            </ol>
+          </div>
+
+          <div class="video-container">
+            <iframe id="video"
+                    title="Chain Crafting Process"
+                    src="https://www.youtube.com/embed/2qsVRetGjFY"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+          </div>
         </div>
-        <div class="price-box">
-          <h3>Signature Chain</h3>
-          <p>₱750</p>
-          <p>Custom name, real gold, iced out</p>
-          <button>Select</button>
-        </div>
-        <div class="price-box">
-          <h3>Boss Chain</h3>
-          <p>₱2000</p>
-          <p>Full diamond piece, handcrafted luxury</p>
-          <button>Select</button>
+      </div>
+    </section>
+
+    <section id="pricing" class="section">
+      <div class="container">
+        <h2 class="section-title">Pricing</h2>
+        <div class="pricing-grid">
+          <div class="price-box card">
+            <h3>Starter Chain</h3>
+            <p class="price">₱250</p>
+            <p class="desc">Gold-plated, sharp look for beginners.</p>
+            <button class="btn">Select</button>
+          </div>
+
+          <div class="price-box card featured">
+            <h3>Signature Chain</h3>
+            <p class="price">₱750</p>
+            <p class="desc">Custom name, real gold, iced finish.</p>
+            <button class="btn primary">Select</button>
+          </div>
+
+          <div class="price-box card">
+            <h3>Boss Chain</h3>
+            <p class="price">₱2000</p>
+            <p class="desc">Full-diamond pieces, handcrafted luxury.</p>
+            <button class="btn">Select</button>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>Privacy | Terms | Contact</p>
-    <p>&copy; 2025 CHAINZZZ Inc.</p>
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Privacy • Terms • Contact</p>
+      <p>&copy; 2025 CHAINZZZ Inc.</p>
+    </div>
   </footer>
 
+  <script>
+    // Mobile nav toggle
+    (function () {
+      const btn = document.getElementById('mobile-nav-toggle');
+      const nav = document.getElementById('nav-bar');
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+
+      // close nav when a link is clicked (mobile)
+      document.querySelectorAll('.nav-link').forEach(a => {
+        a.addEventListener('click', () => {
+          nav.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
